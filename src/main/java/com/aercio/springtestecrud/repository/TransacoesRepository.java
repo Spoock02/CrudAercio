@@ -1,6 +1,6 @@
-package com.aercio.springtestecrud.Repository;
+package com.aercio.springtestecrud.repository;
 
-import com.aercio.springtestecrud.Controller.Transacoes;
+import com.aercio.springtestecrud.model.Transacoes;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,23 +1,21 @@
-package com.aercio.springtestecrud.Controller;
+package com.aercio.springtestecrud.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-public class Contas {
+public class Pessoas {
 
-    @idPessoa
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPessoa;
-
+    @Column(name = "idPessoa")
+    private Long id;
 
     private String nome;
     private String cpf;

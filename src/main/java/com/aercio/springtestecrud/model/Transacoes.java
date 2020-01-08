@@ -1,12 +1,10 @@
-package com.aercio.springtestecrud.Controller;
+package com.aercio.springtestecrud.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,9 +12,10 @@ import javax.persistence.GenerationType;
 @Entity
 public class Transacoes {
 
-    @idTransacao
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idTransacao;
+    @Column(name = "idTransacao")
+    private Long id;
 
     private Long idConta;
     private Double valor;

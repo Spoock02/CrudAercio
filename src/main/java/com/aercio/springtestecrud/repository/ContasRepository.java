@@ -1,6 +1,6 @@
-package com.aercio.springtestecrud.Repository;
+package com.aercio.springtestecrud.repository;
 
-import com.aercio.springtestecrud.Controller.Contas;
+import com.aercio.springtestecrud.model.Contas;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
